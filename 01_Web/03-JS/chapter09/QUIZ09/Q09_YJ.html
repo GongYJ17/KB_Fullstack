@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 01 -->
+    <h1 id="header">From JavaScript</h1>
+    <script>
+      document.querySelector('#header').style.backgroundColor = 'red';
+      document.querySelector('#header').style.color = 'orange';
+    </script>
+
+    <!-- 02 -->
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <script>
+      const header = document.querySelector('h1');
+      header.innerHTML = 'From JavaScript';
+      header.style.backgroundColor = 'red';
+      header.style.color = 'orange';
+    </script>
+
+    <!-- 03 -->
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <script>
+      const headers = document.querySelectorAll('h1');
+
+      for (let i = 0; i < headers.length; i++) {
+        let header = headers[i];
+        header.innerHTML = 'From JavaScript';
+        header.style.backgroundColor = 'red';
+        header.style.color = 'orange';
+      }
+    </script>
+
+    <!-- 04 -->
+
+    <script>
+      let output = '';
+      for (let i = 0; i < 10; i++) {
+        output += '<h1> Header -' + i + '</h1>';
+      }
+      document.body.textContent = output;
+      document.body.innerHTML = output;
+    </script>
+
+    <!-- 05 -->
+    <script>
+      let output = '';
+      for (let i = 0; i < 256; i++) {
+        output += '<div><div>';
+      }
+      document.body.innerHTML = ouput;
+      const divs = document.querySelectorAll('div');
+      for (i=0, i<divs.length, i++) {
+        let div = divs[i]
+        div.style.height = '2px'
+        div.style.backgroundColor = 'rgb(' + i + ',' + i + ',' + i + ')';
+      }
+    </script>
+
+    <!-- 06 -->
+    <img id="image" />
+    <script>
+      const imageEl = document.getElementById('image');
+      imageEl.scr = # ;
+      imageEl.width = 300;
+      imageEl.height = 200;
+    </script>
+
+    <!-- 07 -->
+    <script>
+      document.body.setAttribute('data-custom', 'value');
+      let bodyAttr = document.body.getAttribute('data-custom');
+      alert(bodyAttr);
+    </script>
+    <!-- 08 -->
+  </body>
+</html>

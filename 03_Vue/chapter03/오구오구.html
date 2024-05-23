@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <img v-bind:src="imgSrc" />
+      <button v-on:click="changeImgSrc">눌러봐~! 아기오구오궁</button>
+    </div>
+    <script>
+      const vueApp = Vue.createApp({
+        name: 'App',
+        data() {
+          return {
+            imgSrc:
+              'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDAxMjJfMTEx%2FMDAxNTc5NjcwNDY2MjIy.OlSLM7M4aYyfL7ZI_Yv2zcQiZqn3RM1BeYroDOsMRucg.vcMBAb9F-jtIMBNeCGaI-QGupAJUtsxWuzJ7QdVfQy8g.GIF.theworkscompany%2F2.gif&type=sc960_832_gif',
+          };
+        },
+        methods: {
+          changeImgSrc() {
+            this.imgSrc =
+              'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA0MTdfMTUg%2FMDAxNTg3MDg5MzczMDc5.EbGVZ9nc903rI6cFUKKzsfDlfJ43lKWj65hWOr33PpQg.rYenpMaq4WDqIuiO1run3uLkOFzYCWLEGeoqkKtEvVYg.GIF.theworkscompany%2F7.gif&type=sc960_832_gif';
+          },
+        },
+      }).mount('#app');
+    </script>
+  </body>
+</html>

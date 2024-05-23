@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>회원가입</legend>
+      <table>
+        <tr>
+          <th><label for="user_id">사용자 ID</label></th>
+          <td><input type="text" name="user_id" id="user_id" /></td>
+        </tr>
+        <tr>
+          <th><label for="user_pw">비밀번호</label></th>
+          <td><input type="password" name="user_pw" id="user_pw" /></td>
+        </tr>
+        <tr>
+          <th><label for="user_pw_ck">비밀번호 확인</label></th>
+          <td><input type="password" name="user_pw_ck" id="user_pw_ck" /></td>
+        </tr>
+        <tr>
+          <th><label for="user_name">이름</label></th>
+          <td><input type="text" id="user_name" /></td>
+        </tr>
+        <tr>
+          <th>성별</th>
+          <td>
+            <input type="radio" name="gender" value="me" />
+            <label for="me">남</label>
+            <input type="radio" id="fme" name="gender" value="fme" />
+            <label for="fme">여</label>
+          </td>
+        </tr>
+        <tr>
+          <th>취미</th>
+          <td>
+            <input type="radio" name="hobby1" value="so" />
+            <label for="so">축구</label>
+            <input type="radio" id="bas" name="hobby2" value="bas" />
+            <label for="bas">야구</label>
+            <input type="radio" id="dutch" name="hobby3" value="dutch" />
+            <label for="dutch">배구</label>
+            <input type="radio" id="bask" name="hobby4" value="bask" />
+            <label for="bask">농구</label>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="user_e">email</label></th>
+          <td><input type="text" id="user_e" /></td>
+        </tr>
+        <tr>
+          <th>역할</th>
+          <td>
+            <select>
+              <option>ADMIN</option>
+              <option>관리자</option>
+              <option>일반회원</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <!-- col 2칸까지 먹었음. 확인은 개발자 도구를 통해 얼마나 공간 차지하는 지 알 수 있음. -->
+            <input type="submit" value="확인" />
+            <input type="submit" value="다시쓰기" />
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <!-- <fieldset>
+      <legend>회원가입</legend>
+      <label for="user_id">사용자 ID</label>
+      <input type="text" id="user_id" />
+      <br />
+      <label for="user_pw">비밀번호</label>
+      <input type="password" id="user_pw" />
+      <br />
+      <label for="user_pw_ck">비밀번호 확인</label>
+      <input type="password" id="user_pw_ck" />
+      <br />
+      <label for="user_name">이름</label>
+      <input type="text" id="user_name" />
+      <br />
+      성별
+      <input type="radio" name="gender" value="me" />
+      <label for="me">남</label>
+      <input type="radio" id="fme" name="gender" value="fme" />
+      <label for="fme">여</label>
+      <br />
+      취미
+      <input type="radio" name="hobby" value="so" />
+      <label for="so">축구</label>
+      <input type="radio" id="bas" name="hobby" value="bas" />
+      <label for="bas">야구</label>
+      <input type="radio" id="dutch" name="hobby" value="dutch" />
+      <label for="dutch">배구</label>
+      <input type="radio" id="bask" name="hobby" value="bask" />
+      <label for="bask">농구</label>
+      <br />
+      <label for="user_e">email</label>
+      <input type="text" id="user_e" />
+      <br />
+      역할
+      <select>
+        <option>ADMIN</option>
+        <option>관리자</option>
+        <option>일반회원</option>
+      </select>
+      <br />
+      <input type="submit" value="확인" />
+      <input type="submit" value="다시쓰기" />
+    </fieldset> -->
+  </body>
+</html>

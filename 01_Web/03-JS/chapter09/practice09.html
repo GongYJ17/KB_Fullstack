@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function () {
+          alert('함수호출')
+      }
+
+      function callTenBack(callback) {
+          for(let i=0; i<10; i++){
+              callback();
+          }}
+      const consoleFunc = function() {
+        console.log('비상!!!!!!')
+      };
+
+      
+      callTenBack(consoleFunc)
+    //위와 아래는 같은의미임. 익명함수의 장점은 아래처럼 바로 넣을 수 있음. 
+    // 비상이 아닌 안녕으로 바꿀 수 있음.
+      callTenBack(function() {
+        console.log('비상!!!!!!')})      
+     
+      
+
+
+    </script>
+  </head>
+  <body></body>
+</html>
