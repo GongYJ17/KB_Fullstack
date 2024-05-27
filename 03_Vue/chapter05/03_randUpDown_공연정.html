@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{msg}}</h1>
+      <input type="text" v-model="inputNum" />
+      <button v-on:click="changeMsg">확인</button>
+    </div>
+    <script>
+      const vueApp = Vue.createApp({
+        data() {
+          return {
+            random: parseInt(Math.random() * 20),
+            inputNum: 0,
+            msg: '랜덤으로생성된숫자를맞춰보세요',
+          };
+        },
+        methods: {
+          // changeMsg() {
+          //   if (this.random == this.inputNum) {
+          //     this.msg = '정답입니다!!';
+          //   } else if (this.random < this.inputNum) {
+          //     this.msg = 'Down';
+          //   } else {
+          //     this.msg = 'Up';
+          //   }}
+          changeMsg() {
+            if (this.random < this.inputNum) retrun((this.msg = 'UP'));
+            if (this.random > this.inputNum) retrun((this.msg = 'DOWN'));
+            return (this.msg = '정답입니다!');
+          },
+          // 얼리리턴을 사용해야 return 을 만나서 밑까지 코드를 읽지 않아서 좋음!!
+        },
+      }).mount('#app');
+    </script>
+  </body>
+</html>
