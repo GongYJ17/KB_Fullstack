@@ -34,13 +34,10 @@ const aClassArr = [
 //   return result;
 // }
 
-// console.log(findedIndex(aClassArr, '공연정'));
-
-
 const findedIndex = aClassArr.findIndex(
   (item, index) => item.name === '공연정'
 );
 
 console.log(findedIndex);
 
-
+// console.log(findedIndex(aClassArr, '공연정'));
