@@ -19,6 +19,7 @@ export default {
   name: 'TodoListItem',
   props: ['todoItem'],
 };
+
 </script>
 
 <style lang="scss" scoped></style>

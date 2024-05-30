@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <slot v-bind:msg="msg"></slot>
+  </div>
 </template>
 
 <script>

@@ -4,7 +4,14 @@ import TodoList from './components/TodoList.vue';
 </script>
 
 <template>
-  <div style="F; flex-direction: column; align-items: center">
+  <div
+    style="
+      background-color: orange;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    "
+  >
     <h1>Gong TodoList</h1>
     <inputTodo @addTodo="addTodo" />
     <TodoList
