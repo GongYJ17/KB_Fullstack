@@ -1,11 +1,10 @@
-<template></template>
+<template>
+  <div></div>
+</template>
 
 <script>
-import
-
 export default {
-    name:'TodoList',
-  props: ['todoList'],
+  name: 'TodoListItem',
 };
 </script>
 
