@@ -1,22 +1,16 @@
 {
   "todos": [
     {
-      "id": "1",
-      "todo": "저녁 먹기",
-      "desc": "오늘 저녁 뭐먹지?",
-      "done": false
+      "id": "eb14",
+      "todo": "cccc",
+      "done": false,
+      "editing": false
     },
     {
-      "id": "2",
-      "todo": "복습 하기",
-      "desc": "오늘 배운내용 복습하기",
-      "done": false
-    },
-    {
-      "id": "3f1d",
-      "todo": "공부하기",
-      "desc": "2주차내용(js 파트) 복습할거야!",
-      "done": false
+      "id": "3caa",
+      "todo": "ssss",
+      "done": false,
+      "editing": true
     }
   ],
   "users": [
