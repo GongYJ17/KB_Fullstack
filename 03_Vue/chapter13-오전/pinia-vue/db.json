@@ -1,0 +1,26 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "todo": "집가기",
+      "desc": "룰루",
+      "done": false
+    },
+    {
+      "id": "2",
+      "todo": "건강하기",
+      "desc": "으쌰으쌰",
+      "done": false
+    }
+  ],
+  "users": [
+    {
+      "id": "12",
+      "password": "12"
+    },
+    {
+      "id": "34",
+      "password": "34"
+    }
+  ]
+}

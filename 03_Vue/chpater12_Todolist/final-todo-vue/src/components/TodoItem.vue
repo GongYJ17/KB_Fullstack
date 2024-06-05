@@ -5,7 +5,11 @@
         ? 'list-group-item list-group-item-success'
         : 'list-group-item'
     "
-  ></li>
+  >
+  <span :class="todoItem.done ? 'todo-done pointer' : 'pointer'">
+
+  </span>
+  </li>
 </template>
 
 <script setup></script>
