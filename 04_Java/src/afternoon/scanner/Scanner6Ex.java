@@ -6,8 +6,10 @@ public class Scanner6Ex {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int randNum = (int) (Math.random() * 100) ;
-        while (true) {
 
+
+
+        while (true) {
             System.out.print("랜덤 숫자를 입력하세요. ");
 
             int userNum = sc.nextInt();
