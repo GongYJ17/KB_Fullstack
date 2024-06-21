@@ -1,6 +1,6 @@
-package afternoon.access.refactor2;
+package afternoon.extendss.access.refactor2;
 
-import afternoon.access.refactor.AccountRefactor;
+import afternoon.extendss.access.refactor.AccountRefactor;
 
 public class AccountRefactorOuter {
     public static void main(String[] args) {

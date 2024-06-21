@@ -1,6 +1,6 @@
-package afternoon.access.refactor2;
+package afternoon.extendss.access.refactor2;
 
-import afternoon.access.refactor.PublicClass;
+import afternoon.extendss.access.refactor.PublicClass;
 
 
 public class PublicClassOuterMain {

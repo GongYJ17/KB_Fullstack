@@ -1,6 +1,4 @@
-package afternoon.access;
-
-import java.util.AbstractCollection;
+package afternoon.extendss.access;
 
 public class Account {
     int balance = 0;

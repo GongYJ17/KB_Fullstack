@@ -1,6 +1,6 @@
-package afternoon.access;
+package afternoon.extendss.access;
 
-import afternoon.access.refactor2.BankAccount;
+import afternoon.extendss.access.refactor2.BankAccount;
 
 public class BankAccountMain {
     public static void main(String[] args) {

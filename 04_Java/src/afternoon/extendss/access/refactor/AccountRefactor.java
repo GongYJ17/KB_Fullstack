@@ -1,4 +1,4 @@
-package afternoon.access.refactor;
+package afternoon.extendss.access.refactor;
 
 public class AccountRefactor {
     public String bank;

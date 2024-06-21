@@ -1,4 +1,4 @@
-package afternoon.access.refactor;
+package afternoon.extendss.access.refactor;
 
 public class AccountRefactorMain {
     public static void main(String[] args) {

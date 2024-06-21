@@ -1,4 +1,4 @@
-package afternoon.access.refactor2;
+package afternoon.extendss.access.refactor2;
 
 public class BankAccount {
     private int balance;
